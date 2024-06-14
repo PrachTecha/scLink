@@ -26,3 +26,6 @@ to avoid any possible crashes due to rpy2 not finding the R install on conda, ru
     os.environ['R_HOME'] = sys.exec_prefix+"/lib/R/"
     import scLink
 ```
+
+## Example
+For example usage of scLink please see `test.ipynb`.
