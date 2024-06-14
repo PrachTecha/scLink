@@ -136,7 +136,7 @@ class link_comm:
         else:
             proportions_df = self.proportions_df.copy()
         
-        # UMAP coordinates
+        # embedding coordinates
         X_coords = adata.obsm[embedding]
 
         # Colors for the clusters
@@ -145,7 +145,7 @@ class link_comm:
         fig, ax = plt.subplots(figsize=figsize)
         fig.gca().set_aspect('equal', adjustable='box')
 
-        # Scatter plot for UMAP coordinates
+        # Scatter plot for embedding coordinates
         ax.scatter(X_coords[:, 0], X_coords[:, 1], s=10, facecolors='none', edgecolors='k', alpha=0.5, lw=0.5)
 
         # Add pie charts to the plot
